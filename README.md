@@ -8,3 +8,10 @@ Principal Components Analysis is required to implement to the 400-dimensional da
 The first thing that is done is to shuffle the dataset and labels to distribute them randomly. Then, the shuffled dataset and labels are split into two parts as one of them will be the trainset and the other will be the test set. The splitting is done 2500 by 2500 which will add up to 5000. Then, to implement gaussian model into the training data, mean, std and variance of the trainset is found which is followed by centralizing the train set by extracting the mean of it. Then, the covariance array is found by taking the square of centralized array. From the covariance matrix, eigen vectors and eigen values are found together. Last thing for this part is to order the eigen values and eigen vectors in descending order because we will start choosing them from the large ones. In the following graph, eigen values can be observed in descending order.
 
 ![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/ccd7492d-c4c3-45a5-9eb5-09c0be5cac79)
+
+As it can be observed from the graph, eigen values starts from high values and decreases to zero. Since,
+the number of eigen values is 400 which is high and the eigen values do not change significantly.
+Specifically, if around 50 margin of eigen values is observed, it can be seen that the decrease is much
+smaller than before 50 margin. Normally, just by looking at the plot, it is not possible to determine the
+optimal number of eigen values should be taken into consideration. However, just by observing the plot,
+around 50 components would be chosen.
