@@ -15,3 +15,16 @@ Specifically, if around 50 margin of eigen values is observed, it can be seen th
 smaller than before 50 margin. Normally, just by looking at the plot, it is not possible to determine the
 optimal number of eigen values should be taken into consideration. However, just by observing the plot,
 around 50 components would be chosen.
+
+When the display of ample mean for the whole training dataset as an image is done, the result is like in
+the following figure. Yet, almost nothing is in this display except some small dots of white which are
+barely visiable.
+
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/94e978ef-a1c2-4e6d-8af1-7287219588fa)
+
+Figure 2: The display of the sample mean for the training dataset
+
+Then, eigenvectors of the dataset are displayed in the figure 3. In the display, it can be clearly seen that,
+at first some digits are visible. These digits represent the first eigen vector which are the higher ones.
+As their values decreases, the visibility of their represented digit is also decreasing.
+Figure
