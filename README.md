@@ -45,3 +45,18 @@ In the second part of the project, Fisher linear discriminant analysis is practi
 For the display, I was expecting a similar result as I got from the PCA bases. However, In the display of the bases resulted from the LDA function, digits cannot be observed clearly for all the eigen vectors.
 
 ![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/9d89b8cd-bd38-456e-a0d8-2c48770b4457)
+
+As, it can be observed from the plotting, the accuracy of test data is considerably less then accuracy of train data. As mentioned before, the reason is that we construct the data by using the train data, so when we model the algorithm using the train data, the accuracy of the model increases.
+
+In the third part of the project, articles about Sammon’s mapping and t-SNE are analyzed. These articles are for mapping a dataset to two dimensions. There is a function tool in MATLAB for Sammon’s mapping [4] and for t-SNE there is a direct function in MATLAB [5]. When these functions are obtained according to the project assignment, and when we plot the resulting vectors using scatter function, we get the following 2 figures. In Sammon’s mapping we could use the ‘MaxIter’ option to decrease the run time of the code. However, the more the max iteration is the less the error of the function will be.
+As the articles mentions, in the Sammon mapping, there is a topological structure where as in the t-SNE the structure seems like gathered in the middle of the plotting.
+
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/49e95a3a-8ebc-458e-b923-b6b4e228eb06)
+
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/cb445c59-61cd-435e-a5fd-66a6d6db94e0)
+
+References 1. Mathworks.com. 2021. Linear Discriminant Analysis (LDA) aka. Fisher Discriminant Analysis (FDA). [online] Available at: <https://www.mathworks.com/matlabcentral/fileexchange/53151-linear-discriminant-analysis-lda-aka-fisher-discriminant-analysis-fda> [Accessed 16 April 2021].
+2. Sammon’s mapping (J. W. Sammon, “A Nonlinear Mapping for Data Structure Analysis,” IEEE Transactions on Computers, vol. C-18, no. 5, pp:401-409, May 1969)
+3. t-SNE (L. J. P. van der Maaten and G. E. Hinton, “Visualizing High-Dimensional Data Using t-SNE,” Journal of Machine Learning Research, vol. 9, pp:2579-2605, November 2008) 
+4. MathWorks, www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/56937/versions/28/previews/FSLib_v6.0_2018/lib/drtoolbox/techniques/sammon.m/index.html. 
+5. “X.” t, www.mathworks.com/help/stats/tsne.html.
