@@ -37,3 +37,11 @@ Gaussian classification is implemented to our both training and test data by usi
 ![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/51628e98-04e4-4a3e-bc6a-e162042207af)
 
 As, it can be seen from the plots, when the number of component increase the accuracy of the model also increses and for 20 components it is around 90% which is considerably good prediction.As expected, the accuracy of the train data is higher than the test dataset’s because we construct the model using the train set. So, model predicts better when the train dataset is used. As the number of components increases the difference between the accuracies of train and test dataset can be observed clearly as in Figure 5.
+
+In the second part of the project, Fisher linear discriminant analysis is practiced to the data for the same purpuse in the first part of the project(PCA). Againg half of the data is set to be the train and other half is set to be the test data which are again the same as in the first part. For LDA, a tool used which is availible in the Mathworks[1]. The LDA function that is used for this part is included in the functions part of the MATLAB code. Then, the display function in the first part is used again to display the bases as images. The display is shown in the following figure.
+
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/d9b5a176-842f-4030-bfc5-a08a78b3ebe3)
+
+For the display, I was expecting a similar result as I got from the PCA bases. However, In the display of the bases resulted from the LDA function, digits cannot be observed clearly for all the eigen vectors.
+
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/9d89b8cd-bd38-456e-a0d8-2c48770b4457)
