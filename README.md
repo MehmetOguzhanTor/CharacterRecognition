@@ -32,3 +32,8 @@ As their values decreases, the visibility of their represented digit is also dec
 
 Gaussian classification is implemented to our both training and test data by using transformation matrix that is calculated from the training data. 20 different subspace dimensions are chosen for this part in order to plot and observe the classification error vs the number of components used for each subspace. In the code of this part, gauss train and gauss test functions are created in the end of the code in functions part. In these functions’ gauss train function trains our data algorithm and in gauss test function, accuracy is found. This process is done for both train and test data. In the following figure, there is the plot of classification error vs the number of components for train(blue) and test(orange) data. Instead of creating two plots, to make the observation easier, one plot of two error is chosen.
 
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/b96310d0-3302-4a6e-ab33-238826f8053f)
+
+![image](https://github.com/MehmetOguzhanTor/CharacterRecognition/assets/116079107/51628e98-04e4-4a3e-bc6a-e162042207af)
+
+As, it can be seen from the plots, when the number of component increase the accuracy of the model also increses and for 20 components it is around 90% which is considerably good prediction.As expected, the accuracy of the train data is higher than the test dataset’s because we construct the model using the train set. So, model predicts better when the train dataset is used. As the number of components increases the difference between the accuracies of train and test dataset can be observed clearly as in Figure 5.
